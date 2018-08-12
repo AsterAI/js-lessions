@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="procedure.js"></script>
+    <script src="class.js"></script>
+    <script src="class.user.js"></script>
+    <script src="class.device.js"></script>
+
+
+</head>
+<body>
+
+<script>
+const expences = [
+  new Employee('Vasia', 'male', 100),
+  new Employee('Vasilisa', 'female', 130),
+  new Device('Computer', 50),
+  new Device('Stepler', 3),
+];
+
+let total = 0;
+expences.forEach(expenItem => {
+  const cost = expenItem.getCost();
+  console.log(`Item ${expenItem.getName()} cost => ${cost}`);
+
+  total += cost;
+})
+
+console.log('You spent : ' + total);
+</script>
+</body>
+</html>
