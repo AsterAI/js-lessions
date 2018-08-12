@@ -8,12 +8,14 @@
     <script src="class.js"></script>
     <script src="class.user.js"></script>
     <script src="class.device.js"></script>
-
+    <script src="class.static.js"></script>
 
 </head>
 <body>
 
 <script>
+
+// Полиморфизм
 const expences = [
   new Employee('Vasia', 'male', 100),
   new Employee('Vasilisa', 'female', 130),
@@ -27,9 +29,32 @@ expences.forEach(expenItem => {
   console.log(`Item ${expenItem.getName()} cost => ${cost}`);
 
   total += cost;
-})
+});
 
 console.log('You spent : ' + total);
+</script>
+
+
+<script>
+
+  // Статические опции
+  const c1 = new Student('Vasia');
+  const c2 = new Student('Vasilisa');
+
+
+  c1.testStaticMethods();
+  c2.testStaticMethods();
+
+  const c3 = new Student('Petr');
+  c3.testStaticMethods();
+
+  const goodStudent = new GoodStudent('Sasha');
+  goodStudent.testStaticMethods();
+
+  console.log('Total students created ' + Student.getTotal());
+
+
+
 </script>
 </body>
 </html>
