@@ -3,7 +3,7 @@ const user = {
     sex: 'male' // female, unsure
 }
 
-const asqQuestion = (userData) => {
+const ascQuestion = (userData) => {
     let verb = 'ходил';
     switch (userData.sex) {
         case 'female': verb += 'а'; break;

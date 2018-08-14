@@ -12,13 +12,14 @@ class Student {
     console.log("this.tatal = " + this.total);
     console.log('-------------------------------------')
   }
+
+  static getTotal() {
+    return Student.total;
+  }
+
 }
 
 Student.total = 0;
-
-Student.getTotal = () =>  {
-  return Student.total;
-};
 
 class GoodStudent extends Student {
 

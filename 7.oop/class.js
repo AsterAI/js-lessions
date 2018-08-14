@@ -3,9 +3,14 @@ class ExampleUserClass {
   constructor (name, sex) {
     this.name = name;
     this.sex = sex; // female, unsure
+
+    // incapsulation
+    // return {
+    //   ascQuestion: this.ascQuestion.bind(this)
+    // }
   }
 
-  asqQuestion() {
+  ascQuestion() {
     let verb = 'ходил';
     switch (this.sex) {
       case 'female': verb += 'а'; break;

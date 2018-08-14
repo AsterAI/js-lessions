@@ -5,7 +5,7 @@ class User {
     this.sex = sex; // female, unsure
   }
 
-  asqQuestion() {
+  ascQuestion() {
     let verb = 'ходил';
     switch (this.sex) {
       case 'female': verb += 'а'; break;
